@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/{alencodes}/{MyFamilyTree}.png?branch=master)](https://travis-ci.org/{alencodes}/{MyFamilyTree})
+[![Build Status](https://travis-ci.org/{alencodes}/{MyFamilyTree}.png?branch=master)](https://travis-ci.org/{alencodes}/{MyFamilyTree}) [![Inline docs](http://inch-ci.org/github/{alencodes}/{MyFamilyTree}.svg?branch=master)](http://inch-ci.org/github/{alencodes}/{MyFamilyTree})
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/alencodes/MyFamilyTree/edit/master/README.md) to maintain and preview the content for your website in Markdown files.

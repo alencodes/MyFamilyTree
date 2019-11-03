@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.com/alencodes/MyFamilyTree.svg?branch=master)](https://travis-ci.com/alencodes/MyFamilyTree)
-## Welcome My Family Tree
+## Welcome to My Family Tree
 
 Build and visualize your own Family Tree
 

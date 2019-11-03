@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/{alencodes}/{MyFamilyTree}.png?branch=master)](https://travis-ci.org/{alencodes}/{MyFamilyTree})
+[![Build Status](https://travis-ci.com/alencodes/MyFamilyTree.svg?branch=master)](https://travis-ci.com/alencodes/MyFamilyTree)
 ## Welcome My Family Tree
 
 You can use the [editor on GitHub](https://github.com/alencodes/MyFamilyTree/edit/master/README.md) to maintain and preview the content for your website in Markdown files.

@@ -4,4 +4,4 @@ python:
 install:
   - pip install -q Django==2.2.6
 script:
-  - pytest
+  - python manage.py test

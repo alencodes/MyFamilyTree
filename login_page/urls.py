@@ -1,4 +1,4 @@
-"""MyFamilyTree URL Configuration
+"""manage_relation URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -13,16 +13,9 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
 from django.conf.urls import url
-from django.conf.urls import include 
 from login_page import views
-from django.conf import settings
-from django.conf.urls.static import static
 
 urlpatterns = [
-    url(r'^$', views.register, name='index'),
-    url(r'^manage_relation/', include('manage_relation.urls')),
-    url(r'^login_page/', include('login_page.urls')),
-    url(r'^admin/', admin.site.urls),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    url(r'^register/$', views.register, name='register'),
+]

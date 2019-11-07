@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My Family Tree</title>
-    </head>
-    <body>
-        <h1>Register with MyFamilyTree</h1>
 
-        {% if registered %}
-        <strong>thank you for registering!</strong>
-        <a href="/">Return to the homepage.</a><br />
-        {% else %}
-        <strong>register here!</strong><br />
-        <form id="user_form" method="post" action="/login_page/register/"
-                enctype="multipart/form-data">
-            {% csrf_token %}
-            {{ user_form.as_p }}
-            <input type="submit" name="submit" value="Register" />
-        </form>
-        {% endif %}
-    </body>
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Koothardan - Sign in</title>
+</head>
+
+<body>
+<div class="main">
+    <p class="sign" align="center">KOOTHRADAN Family</br>Sign In</p>
+    <form method="post" action="/login_page/register/">
+        {% csrf_token %}
+        <input name="username" class="un " type="text" align="center" placeholder="Username">
+        <input name="email" class="em " type="text" align="center" placeholder="Email">
+        <input name="password" class="pass" type="password" align="center" placeholder="Password">
+        <button class="submit" type="submit" align="center">Register</button>
+        <div class="forgot" align="center"><a href="#">Forgot Password?</a></div>
+    </form>
+
+</div>
+
+</body>
+
 </html>

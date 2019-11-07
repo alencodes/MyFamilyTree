@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Koothardan - Sign in</title>
+</head>
+
+<body>
+<div class="main">
+    <p class="sign" align="center">KOOTHRADAN Family</br>Sign In</p>
+    <form class="form1" id="user_form" method="post" action="/login_page/login/" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input class="un " type="text" align="center" placeholder="Username">
+        <input class="pass" type="password" align="center" placeholder="Password">
+        <input class="submit" type="submit" align="center" value="Login">
+        <p class="forgot" align="center"><a href="/login_page/register/">Register</a></p>
+
+</div>
+
+</body>
+
+</html>

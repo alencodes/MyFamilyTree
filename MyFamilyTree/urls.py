@@ -21,7 +21,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    url(r'^$', views.register, name='index'),
+    url(r'^$', views.login, name='index'),
     url(r'^manage_relation/', include('manage_relation.urls')),
     url(r'^login_page/', include('login_page.urls')),
     url(r'^admin/', admin.site.urls),
